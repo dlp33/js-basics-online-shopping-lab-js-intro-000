@@ -24,7 +24,7 @@ var itemArray = [];
   cart.forEach(function(value, index, array) {
    var key = Object.keys(array[index]);
    var price = array[index][key];
-	 itemArray[index] = `${key} at ${price}`;
+	 itemArray[index] = `${key} at $${price}`;
 });
 
   if(cart.length < 1) {
