@@ -82,7 +82,8 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   if(arguments.length) {
-    
+    console.log(`Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`);
+    cart = [];
   } else {
     console.log(`Sorry, we don't have a credit card on file for you.`);
   }
