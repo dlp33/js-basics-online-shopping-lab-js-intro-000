@@ -32,8 +32,7 @@ var itemArray = [];
   }
 
   if (cart.length === 1) {
-    var item1 = itemArray[0];
-    console.log(`In your cart, you have ${item1}.`);
+    console.log(`In your cart, you have ${itemArray[0]}.`);
   }
 
   if (cart.length === 2) {
