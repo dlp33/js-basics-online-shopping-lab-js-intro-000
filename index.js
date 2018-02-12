@@ -43,10 +43,6 @@ var itemArray = [];
   }
 
   if (cart.length >= 3) {
-    var item1 = itemArray[0];
-    var item2 = itemArray[1];
-    var item3 = itemArray[2];
-    console.log(`In your cart, you have ${item1}, ${item2}, and ${item3}.`);
 
     var str = `In your cart, you have `;
 
@@ -54,28 +50,11 @@ var itemArray = [];
      str +=  itemArray[i] + ', ';
    }
 
-
-
     var lastItem = itemArray.splice(-1).toString();
     var combinedStr = `and ${lastItem}.`;
 
-
-
-
     console.log(str + combinedStr);
-    //
-    //
-    // cart.forEach(function(value, index, array) {
-    //
-    // });
-
-
-
-
   }
-
-return itemArray;
-
 
 }
 
