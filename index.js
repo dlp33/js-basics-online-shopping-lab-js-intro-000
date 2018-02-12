@@ -32,21 +32,21 @@ var itemArray = [];
   }
 
   if (cart.length === 1) {
-    var item = itemArray[0];
-    console.log(`In your cart, you have ${item}.`);
+    var item1 = itemArray[0];
+    console.log(`In your cart, you have ${item1}.`);
   }
 
   if (cart.length === 2) {
     var item1 = itemArray[0];
     var item2 = itemArray[1];
-    console.log(`In your cart, you have ${item}, and ${item2}.`);
+    console.log(`In your cart, you have ${item1}, and ${item2}.`);
   }
 
   if (cart.length === 3) {
     var item1 = itemArray[0];
     var item2 = itemArray[1];
     var item3 = itemArray[1];
-    console.log(`In your cart, you have ${item}, ${item2}, and ${item3}.`);
+    console.log(`In your cart, you have ${item1}, ${item2}, and ${item3}.`);
   }
 }
 
