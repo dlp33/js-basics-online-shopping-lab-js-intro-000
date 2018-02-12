@@ -36,9 +36,7 @@ var itemArray = [];
   }
 
   if (cart.length === 2) {
-    var item1 = itemArray[0];
-    var item2 = itemArray[1];
-    console.log(`In your cart, you have ${item1} and ${item2}.`);
+    console.log(`In your cart, you have ${itemArray[0]} and ${itemArray[1]}.`);
   }
 
   if (cart.length >= 3) {
