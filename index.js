@@ -20,19 +20,19 @@ function addToCart(item) {
 
 
 function viewCart() {
-var newArray = [];
+var itemArray = [];
   cart.forEach(function(value, index, array) {
    var key = Object.keys(array[index]);
    var price = array[index][key];
-	 newArray[index] = `${key} at ${price}`;
+	 itemArray[index] = `${key} at ${price}`;
 });
 
   if(cart.length < 1) {
-    return 'Your shopping cart is empty.';
+    console.log('Your shopping cart is empty.');
   }
 
   if (cart.length === 1) {
-    var item = newArray[0];
+    var item = itemArray[0];
     console.log(`In your cart, you have ${item}.`);
   }
 
