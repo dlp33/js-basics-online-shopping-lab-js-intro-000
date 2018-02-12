@@ -51,7 +51,7 @@ var itemArray = [];
     var lastItemArray = itemArray;
 
     var lastItem = lastItemArray.splice(-1).toString();
-    var combinedStr = `and ${lastItem}`;
+    var combinedStr = `and ${lastItem}.`;
 
 
      var str = `In your cart, you have `;
