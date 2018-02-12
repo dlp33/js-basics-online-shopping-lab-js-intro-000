@@ -51,7 +51,15 @@ var itemArray = [];
 }
 
 function total() {
-  // write your code here
+  var total = 0;
+  cart.forEach(function(value, index, array) {
+   //var key = Object.keys(array[index]);
+   var price = array[index][key];
+   total += price;
+});
+
+return total;
+
 }
 
 function removeFromCart(item) {
