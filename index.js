@@ -63,12 +63,20 @@ return total;
 }
 
 function removeFromCart(item) {
+  var beforeLength = cart.length;
   cart.forEach(function(value, index, array) {
     if(cart[index].hasOwnProperty(item)){
       cart.splice(index, 1);
   });
 
-  return cart;
+  var afterLength = cart.length;
+
+  if(afterLength === beforeLength) {
+    console.log('That item is not in your cart.');
+    return cart;
+  } else {
+    return cart;
+  }
 }
 
 function placeOrder(cardNumber) {
