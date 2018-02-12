@@ -21,9 +21,9 @@ function viewCart() {
     return `Your shopping cart is empty.`;
   }
 
-  for(var i = 0; i < cart.length; i++) {
-    console.log(cart[i][item]);
-  }
+  // for(var i = 0; i < cart.length; i++) {
+  //   console.log(cart[i][item]);
+  // }
   // In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.
 }
 
