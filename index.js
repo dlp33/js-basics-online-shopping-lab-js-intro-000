@@ -63,7 +63,12 @@ return total;
 }
 
 function removeFromCart(item) {
-  // write your code here
+  cart.forEach(function(value, index, array) {
+    if(cart[index].hasOwnProperty(item)){
+      cart.splice(index, 1);
+  });
+
+  return cart;
 }
 
 function placeOrder(cardNumber) {
