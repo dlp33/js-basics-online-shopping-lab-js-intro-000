@@ -33,7 +33,7 @@ var newArray = [];
 
   if (cart.length === 1) {
     var item = newArray[0];
-    return `In your cart, you have ${item}.`
+    console.log(`In your cart, you have ${item}.`);
   }
 
   // In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.
