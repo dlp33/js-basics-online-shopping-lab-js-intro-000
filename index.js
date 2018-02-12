@@ -23,7 +23,7 @@ function viewCart() {
 var newArray = [];
   cart.forEach(function(value, index, array) {
    var key = Object.keys(array[index]);
-   var price = array[index][key];   
+   var price = array[index][key];
 	 newArray[index] = `${key} at ${price}`;
 });
 
