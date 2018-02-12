@@ -48,13 +48,19 @@ var itemArray = [];
     var item3 = itemArray[2];
     console.log(`In your cart, you have ${item1}, ${item2}, and ${item3}.`);
 
+    var lastItemArray = itemArray;
+
+    var lastItem = lastItemArray.splice(-1).toString();
+    var combinedStr = `and ${lastItem}`;
+
+
      var str = `In your cart, you have `;
 
     for(var i = 0; i < itemArray.length-1; i++) {
       str +=  itemArray[i] + ', ';
     }
 
-    console.log(str);
+    console.log(str + combinedStr);
     //
     //
     // cart.forEach(function(value, index, array) {
