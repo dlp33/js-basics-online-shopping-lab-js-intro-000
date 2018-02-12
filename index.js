@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
  cart.push({[item]: Math.floor(Math.random() * 100)});
  console.log(`${item} has been added to your cart.`);
- return viewCart();
+ return cart;
 }
 
 
@@ -34,6 +34,19 @@ var itemArray = [];
   if (cart.length === 1) {
     var item = itemArray[0];
     console.log(`In your cart, you have ${item}.`);
+  }
+
+  if (cart.length === 2) {
+    var item1 = itemArray[0];
+    var item2 = itemArray[1];
+    console.log(`In your cart, you have ${item}, and ${item2}.`);
+  }
+
+  if (cart.length === 3) {
+    var item1 = itemArray[0];
+    var item2 = itemArray[1];
+    var item3 = itemArray[1];
+    console.log(`In your cart, you have ${item}, ${item2}, and ${item3}.`);
   }
 
   // In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.
