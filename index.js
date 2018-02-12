@@ -16,14 +16,26 @@ function addToCart(item) {
  return cart;
 }
 
+
+
+
 function viewCart() {
-  if (cart.length < 1) {
-    return `Your shopping cart is empty.`;
+var newArray = [];
+  cart.forEach(function(value, index, array) {
+   var key = Object.keys(array[index]);
+   var price = array[index][key];   
+	 newArray[index] = `${key} at ${price}`;
+});
+
+  if(cart.length < 1) {
+    return 'Your shopping cart is empty.';
   }
 
-  // for(var i = 0; i < cart.length; i++) {
-  //   console.log(cart[i][item]);
-  // }
+  if (cart.length === 1) {
+    var item = newArray[0];
+    return `In your cart, you have ${item}.`
+  }
+
   // In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.
 }
 
